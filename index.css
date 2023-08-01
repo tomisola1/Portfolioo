@@ -14,6 +14,16 @@ body{
     gap: 20px;
 }
 
+.active {
+    background-color: #1ABC9C;
+    /* padding: 15px 5px; */
+    border-radius: 12px;
+}
+
+.nav-item > a{
+    color: #1ABC9C;
+}
+
 .menu-btn {
     background-color: #1ABC9C;
     gap: 10px;
@@ -54,6 +64,10 @@ body{
     padding: 100px 0;
 }
 
+.portfolio-item:hover {
+    background-color: #1ABC9C;
+}
+
 .portfolio-img {
     width: 100%;
     border-radius: 12px;
@@ -66,6 +80,7 @@ body{
 
 .about-text {
     font-weight: 500;
+    font-size: 20px;
 }
 
 .download-icon {
@@ -91,6 +106,7 @@ body{
 .footer {
     background-color: #2C3E50;
     padding: 80px 0;
+    font-size: 20px;
 }
 
 .btn-social {
