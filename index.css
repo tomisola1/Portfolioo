@@ -4,10 +4,18 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Montserrat", "sans-serif";
+    position: relative;
 }
 
-.nav-container {
+#navbar-container {
     background-color: #2C3E50;
+    transition: 0.4s;
+    padding: 20px 5px;
+}
+
+#logo {
+    transition: 0.4s;
+    font-size: 28px;
 }
 
 .nav-list {
@@ -16,11 +24,16 @@ body{
 
 .active {
     background-color: #1ABC9C;
-    /* padding: 15px 5px; */
+    color: #ffffff;
+    padding: 10px 5px;
     border-radius: 12px;
 }
 
-.nav-item > a{
+.nav-text .nav-item .nav-link{
+    color: #ffffff;
+}
+
+.nav-text .nav-item .nav-link:hover {
     color: #1ABC9C;
 }
 
@@ -36,7 +49,7 @@ body{
 }
 
 .header {
-    height: 90vh;
+    height: 100vh;
     background-color: #1ABC9C;
     padding: 170px 0 0;
 }
@@ -48,6 +61,26 @@ body{
 
 .header-heading {
     font-size: 4rem;
+}
+
+.divider {
+    gap: 1rem;
+}
+
+.divider-line {
+    width: 7rem;
+    height: 0.25rem;
+    background-color: #ffffff;
+}
+
+.divider-line1 {
+    width: 7rem;
+    height: 0.25rem;
+    background-color: #2C3E50;
+}
+
+.header-subheading {
+    font-weight: 500;
 }
 
 .page-section {
@@ -64,9 +97,39 @@ body{
     padding: 100px 0;
 }
 
-.portfolio-item:hover {
-    background-color: #1ABC9C;
+.portfolio-item {
+    position: relative;
 }
+
+.portfolio-item-caption-content {
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 12px;
+  transition: .5s ease;
+  background-color: #1ABC9C;
+}
+
+.portfolio-item:hover .portfolio-item-caption-content {
+    opacity: 0.8;
+}
+
+.fa-plus {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 .portfolio-img {
     width: 100%;
@@ -80,7 +143,7 @@ body{
 
 .about-text {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .download-icon {
