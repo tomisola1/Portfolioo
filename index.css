@@ -79,10 +79,6 @@ body{
     background-color: #2C3E50;
 }
 
-/* .fa-star {
-    color: #2C3E50;
-} */
-
 .header-subheading {
     font-weight: 500;
 }
@@ -209,7 +205,7 @@ body{
 
  @media (max-width: 510px) { 
     .header-heading {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
  }
 
