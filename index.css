@@ -79,6 +79,10 @@ body{
     background-color: #2C3E50;
 }
 
+/* .fa-star {
+    color: #2C3E50;
+} */
+
 .header-subheading {
     font-weight: 500;
 }
@@ -180,3 +184,37 @@ body{
 .footer-link {
     color: #1ABC9C;
 }
+
+.modal-heading-text {
+    font-size: 48px;
+    color: #2C3E50;
+    font-weight: 700;
+}
+
+.modal-btn {
+    background-color: #1ABC9C;
+    color: #ffffff;
+}
+
+.modal-btn:hover {
+    background-color: #16a085;
+    color: #ffffff;
+}
+
+@media (max-width: 767.98px) { 
+    .header-heading {
+        font-size: 3rem;
+    }
+ }
+
+ @media (max-width: 510px) { 
+    .header-heading {
+        font-size: 2.2rem;
+    }
+ }
+
+ @media (max-width: 450px) {
+    .modal-heading-text {
+        font-size: 38px;
+    }
+ }
